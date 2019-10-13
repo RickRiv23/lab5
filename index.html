@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab 5: Pixabay Search</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="assets/styles.css" type="text/css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div>
+            <h1> Search for some images:</h1>
+            <input id="search" type="text" name="search"/>
+            <button id="submit" type="submit" name="submitSearch">Search</button>
+            <span id="feedback"></span>
+        </div>
+        <br>
+        <div>
+        <label for="orientation"> Select Orientation: 
+            <select id="orientation">
+                <option name="orientation" value="">Select One</option>
+                <option name="orientation" value="vertical">Vertical</option>
+                <option name="orientation" value="horizontal">Horizontal</option>
+            </select>
+        </label>
+        </div>
+        <br>
+        <div id="images"></div>
+        <script type="text/javascript" src="assets/scripts.js"></script>
+    </body>
+</html>
