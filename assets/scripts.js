@@ -8,7 +8,7 @@ const apiKey = "10288928-e28258c7c61a0cd6e8cfdd031",
 function getImage(search){
     if(search){
         let orientation = $("#orientation").val() ? $("#orientation").val() : "";
-        alert(orientation);
+        // alert(orientation);
         $("#feedback").html("");
         $.ajax({
             method:"GET",
@@ -36,8 +36,8 @@ function displayImages(images){
         randNum = Math.floor(Math.random() * 20);
         $("#images").append(`
         <figure>
-        <img id="image${i}" class="image" src="${images[randNum].imageURL}" alt="${images[randNum].tags}">
         <figcaption> Likes: ${images[randNum].likes} </figcaption>
+        <img id="image${i}" class="image" src="${images[randNum].imageURL}" alt="${images[randNum].tags}">
         </figure>
         `);
     }
